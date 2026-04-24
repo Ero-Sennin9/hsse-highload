@@ -1,0 +1,13 @@
+flowchart TB
+  user["User (Buyer/Seller)"]
+  admin["Moderator/Admin"]
+  system["Marketplace Platform"]
+  payment["External Payment Provider"]
+  mail["Email Provider"]
+  cdn["CDN"]
+
+  user -->|"HTTP/Web/Mobile"| system
+  admin -->|"Moderation UI/API"| system
+  system -->|"Payment request"| payment
+  system -->|"Email notifications"| mail
+  system -->|"Media delivery"| cdn

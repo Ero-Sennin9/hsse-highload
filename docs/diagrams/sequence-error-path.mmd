@@ -1,0 +1,16 @@
+sequenceDiagram
+    autonumber
+    participant U as User
+    participant G as API Gateway
+    participant S as Search Service
+    participant C as Circuit Breaker
+    participant E as Elasticsearch
+
+    U->>G: GET /api/v1/search/ads?q=iphone
+    G->>S: search request
+    S->>C: call ES through breaker
+    C->>E: query
+    E--xC: timeout
+    C-->>S: open/half-open state, fail fast
+    S-->>G: 503 Service Unavailable
+    G-->>U: error payload + retry advice

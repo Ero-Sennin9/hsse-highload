@@ -1,0 +1,448 @@
+openapi: 3.0.3
+info:
+  title: Highload Marketplace API
+  version: 1.0.0
+  description: |
+    API for Assignment 02 (Architecture) case B: marketplace ads.
+    Versioning strategy: URI versioning (/api/v1/...).
+servers:
+  - url: https://api.marketplace.local
+    description: Production
+  - url: http://localhost:8080
+    description: Local
+tags:
+  - name: Ads
+  - name: Search
+  - name: Billing
+  - name: Subscriptions
+
+paths:
+  /api/v1/ads:
+    post:
+      tags: [Ads]
+      operationId: createAd
+      summary: Create new ad
+      description: Creates ad in moderation_pending status.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAdRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdCreatedResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+
+  /api/v1/ads/{adId}:
+    get:
+      tags: [Ads]
+      operationId: getAdById
+      summary: Get ad card by id
+      parameters:
+        - $ref: '#/components/parameters/AdId'
+      responses:
+        '200':
+          description: Ad details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdDetailsResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+
+  /api/v1/search/ads:
+    get:
+      tags: [Search]
+      operationId: searchAds
+      summary: Full-text search with filters
+      parameters:
+        - in: query
+          name: q
+          required: true
+          schema:
+            type: string
+            minLength: 2
+          description: Full-text search query
+        - in: query
+          name: category
+          schema:
+            type: string
+        - in: query
+          name: region
+          schema:
+            type: string
+        - in: query
+          name: min_price
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+        - in: query
+          name: max_price
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+        - in: query
+          name: page
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - in: query
+          name: page_size
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Search result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchAdsResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+
+  /api/v1/ads/{adId}/promotions:
+    post:
+      tags: [Billing]
+      operationId: purchasePromotion
+      summary: Pay for ad promotion
+      description: |
+        Creates payment transaction and promotion request.
+        Promotion is activated only after ad reaches published status.
+      parameters:
+        - $ref: '#/components/parameters/AdId'
+        - in: header
+          name: Idempotency-Key
+          required: true
+          schema:
+            type: string
+          description: Unique key for exactly-once payment semantics
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PurchasePromotionRequest'
+      responses:
+        '201':
+          description: Promotion payment accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PurchasePromotionResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '402':
+          description: Payment required / failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: Duplicate idempotency key
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+
+  /api/v1/subscriptions:
+    post:
+      tags: [Subscriptions]
+      operationId: createSearchSubscription
+      summary: Subscribe to search query
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateSubscriptionRequest'
+      responses:
+        '201':
+          description: Subscription created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateSubscriptionResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+
+components:
+  parameters:
+    AdId:
+      in: path
+      name: adId
+      required: true
+      schema:
+        type: string
+        format: uuid
+      description: Ad identifier
+
+  responses:
+    BadRequest:
+      description: Invalid request data
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: Authentication required
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotFound:
+      description: Entity not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    RateLimited:
+      description: Too many requests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    ServiceUnavailable:
+      description: Temporary service outage
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+  schemas:
+    CreateAdRequest:
+      type: object
+      required: [title, description, category, region, price, photos]
+      properties:
+        title:
+          type: string
+          minLength: 5
+          maxLength: 120
+        description:
+          type: string
+          minLength: 20
+          maxLength: 5000
+        category:
+          type: string
+        region:
+          type: string
+        price:
+          type: integer
+          format: int64
+          minimum: 0
+        photos:
+          type: array
+          maxItems: 8
+          items:
+            type: string
+            format: uri
+
+    AdCreatedResponse:
+      type: object
+      required: [ad_id, status, moderation_status]
+      properties:
+        ad_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [draft, moderation_pending, published, rejected]
+        moderation_status:
+          type: string
+          enum: [pending, approved, rejected]
+
+    AdDetailsResponse:
+      type: object
+      required: [ad_id, title, description, category, region, price, status, published_at]
+      properties:
+        ad_id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        description:
+          type: string
+        category:
+          type: string
+        region:
+          type: string
+        price:
+          type: integer
+          format: int64
+        photos:
+          type: array
+          items:
+            type: string
+            format: uri
+        status:
+          type: string
+          enum: [published, archived]
+        promotion:
+          type: object
+          properties:
+            active:
+              type: boolean
+            type:
+              type: string
+              enum: [none, top, premium]
+            expires_at:
+              type: string
+              format: date-time
+        published_at:
+          type: string
+          format: date-time
+
+    SearchAdsResponse:
+      type: object
+      required: [items, page, page_size, total]
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchAdItem'
+        page:
+          type: integer
+        page_size:
+          type: integer
+        total:
+          type: integer
+
+    SearchAdItem:
+      type: object
+      required: [ad_id, title, price, region, published_at]
+      properties:
+        ad_id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        price:
+          type: integer
+          format: int64
+        region:
+          type: string
+        thumbnail_url:
+          type: string
+          format: uri
+        promoted:
+          type: boolean
+        published_at:
+          type: string
+          format: date-time
+
+    PurchasePromotionRequest:
+      type: object
+      required: [promotion_type, period_days, payment_method_id]
+      properties:
+        promotion_type:
+          type: string
+          enum: [top, premium]
+        period_days:
+          type: integer
+          enum: [1, 3, 7, 14, 30]
+        payment_method_id:
+          type: string
+          format: uuid
+
+    PurchasePromotionResponse:
+      type: object
+      required: [payment_id, promotion_id, status, activation_status]
+      properties:
+        payment_id:
+          type: string
+          format: uuid
+        promotion_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [accepted, failed]
+        activation_status:
+          type: string
+          enum: [pending_publication, activated]
+
+    CreateSubscriptionRequest:
+      type: object
+      required: [query, delivery_channel]
+      properties:
+        query:
+          type: object
+          required: [q]
+          properties:
+            q:
+              type: string
+            category:
+              type: string
+            region:
+              type: string
+            min_price:
+              type: integer
+              format: int64
+            max_price:
+              type: integer
+              format: int64
+        delivery_channel:
+          type: string
+          enum: [email]
+
+    CreateSubscriptionResponse:
+      type: object
+      required: [subscription_id, status]
+      properties:
+        subscription_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [active]
+
+    ErrorResponse:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+          example: validation_error
+        message:
+          type: string
+          example: Invalid input payload
+        details:
+          type: object
+          additionalProperties: true

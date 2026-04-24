@@ -1,0 +1,25 @@
+sequenceDiagram
+    autonumber
+    participant U as User
+    participant G as API Gateway
+    participant A as Ads Service
+    participant P as PostgreSQL
+    participant K as Kafka
+    participant M as Moderation Service
+    participant I as Indexer
+    participant E as Elasticsearch
+
+    U->>G: POST /api/v1/ads
+    G->>A: create ad
+    A->>P: INSERT ad(status=moderation_pending)
+    A->>K: publish ad.created
+    A-->>G: 201 Created
+    G-->>U: ad_id + moderation_pending
+
+    K->>M: consume ad.created
+    M->>K: publish ad.approved
+    K->>A: consume ad.approved
+    A->>P: UPDATE ad(status=published)
+    A->>K: publish ad.published
+    K->>I: consume ad.published
+    I->>E: index ad document

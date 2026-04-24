@@ -1,0 +1,28 @@
+sequenceDiagram
+    autonumber
+    participant U as User
+    participant G as API Gateway
+    participant B as Billing Service
+    participant P as PostgreSQL
+    participant O as Outbox Publisher
+    participant K as Kafka
+    participant A as Ads Service
+    participant N as Notification Service
+
+    U->>G: POST /api/v1/ads/{adId}/promotions + Idempotency-Key
+    G->>B: purchase promotion
+    B->>P: BEGIN
+    B->>P: INSERT payment + promotion(pending_publication)
+    B->>P: INSERT outbox event promotion.paid
+    B->>P: COMMIT
+    B-->>G: 201 accepted
+    G-->>U: payment accepted
+
+    O->>P: poll outbox
+    O->>K: publish promotion.paid
+    A->>K: publish ad.published
+    K->>B: consume ad.published
+    B->>P: activate promotion (starts_at/expires_at)
+    B->>K: publish promotion.activated
+    K->>N: consume promotion.activated
+    N-->>U: email/push notification

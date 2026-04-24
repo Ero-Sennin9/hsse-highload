@@ -1,0 +1,51 @@
+flowchart LR
+  user["User Client"]
+  admin["Moderator UI"]
+
+  gateway["API Gateway"]
+  ads["Ads Service"]
+  moderation["Moderation Service"]
+  search["Search Service"]
+  billing["Billing Service"]
+  notify["Subscription/Notification Service"]
+  indexer["Search Indexer Worker"]
+
+  pg[("PostgreSQL")]
+  es[("Elasticsearch")]
+  redis[("Redis")]
+  kafka[("Kafka")]
+  s3[("S3/MinIO")]
+  cdn["CDN"]
+  pay["Payment Provider"]
+  mail["Email Provider"]
+
+  user --> gateway
+  admin --> gateway
+
+  gateway --> ads
+  gateway --> search
+  gateway --> billing
+  gateway --> notify
+
+  ads --> pg
+  ads --> s3
+  ads --> kafka
+
+  moderation --> kafka
+  moderation --> pg
+
+  billing --> pg
+  billing --> kafka
+  billing --> pay
+
+  search --> es
+  search --> redis
+
+  indexer --> kafka
+  indexer --> es
+
+  notify --> kafka
+  notify --> pg
+  notify --> mail
+
+  s3 --> cdn
