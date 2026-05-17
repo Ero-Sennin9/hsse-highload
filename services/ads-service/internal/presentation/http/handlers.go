@@ -40,7 +40,7 @@ func NewRouter(
 	mux.HandleFunc("POST /api/v1/ads/{id}/photos", rt.uploadPhoto)
 	mux.HandleFunc("POST /api/v1/ads/{id}/publish", rt.publishAd)
 	mux.HandleFunc("GET /api/v1/ads/{id}", rt.getAd)
-	lim := rate.NewLimiter(rate.Limit(120), 40)
+	lim := rate.NewLimiter(rate.Limit(500), 100)
 	return RateLimitCreate(mux, lim)
 }
 
