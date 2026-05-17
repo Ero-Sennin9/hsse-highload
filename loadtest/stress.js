@@ -19,13 +19,13 @@ const WRITE_FRAC = 0.15;
 const PROMO_FRAC = 0.05;
 
 const stages = [
-  { target: 50,  duration: "2m" },
-  { target: 100, duration: "2m" },
-  { target: 200, duration: "2m" },
-  { target: 300, duration: "2m" },
-  { target: 450, duration: "2m" },
-  { target: 600, duration: "2m" },
-  { target: 0,   duration: "30s" },
+  { target: 100,  duration: "2m" },
+  { target: 300,  duration: "2m" },
+  { target: 600,  duration: "2m" },
+  { target: 900,  duration: "2m" },
+  { target: 1200, duration: "2m" },
+  { target: 1500, duration: "2m" },
+  { target: 0,    duration: "30s" },
 ];
 
 function rpsStages(frac) {
@@ -40,28 +40,28 @@ export const options = {
     reads: {
       executor: "ramping-arrival-rate",
       exec: "doRead",
-      startRate: Math.round(50 * READ_FRAC),
+      startRate: Math.round(100 * READ_FRAC),
       timeUnit: "1s",
-      preAllocatedVUs: 100,
-      maxVUs: 800,
+      preAllocatedVUs: 200,
+      maxVUs: 2000,
       stages: rpsStages(READ_FRAC),
     },
     writes: {
       executor: "ramping-arrival-rate",
       exec: "doWrite",
-      startRate: Math.max(1, Math.round(50 * WRITE_FRAC)),
+      startRate: Math.max(1, Math.round(100 * WRITE_FRAC)),
       timeUnit: "1s",
-      preAllocatedVUs: 30,
-      maxVUs: 400,
+      preAllocatedVUs: 50,
+      maxVUs: 800,
       stages: rpsStages(WRITE_FRAC),
     },
     promotions: {
       executor: "ramping-arrival-rate",
       exec: "doPromotion",
-      startRate: Math.max(1, Math.round(50 * PROMO_FRAC)),
+      startRate: Math.max(1, Math.round(100 * PROMO_FRAC)),
       timeUnit: "1s",
-      preAllocatedVUs: 10,
-      maxVUs: 100,
+      preAllocatedVUs: 20,
+      maxVUs: 200,
       stages: rpsStages(PROMO_FRAC),
     },
   },
