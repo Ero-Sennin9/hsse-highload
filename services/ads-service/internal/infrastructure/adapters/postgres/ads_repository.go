@@ -32,13 +32,18 @@ func (r *AdsRepository) Save(ctx context.Context, ad *entities.Ad) error {
 		pub = sql.NullTime{Time: *ad.PublishedAt, Valid: true}
 	}
 	_, err := r.db.ExecContext(ctx, `
-		INSERT INTO ads (id, title, status, created_at, published_at)
-		VALUES ($1, $2, $3, $4, $5)
+		INSERT INTO ads (id, title, description, category, region, price, status, created_at, published_at)
+		VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
 		ON CONFLICT (id) DO UPDATE SET
 			title = EXCLUDED.title,
+			description = EXCLUDED.description,
+			category = EXCLUDED.category,
+			region = EXCLUDED.region,
+			price = EXCLUDED.price,
 			status = EXCLUDED.status,
 			published_at = EXCLUDED.published_at`,
-		ad.ID, ad.Title, string(ad.Status), ad.CreatedAt.UTC(), pub,
+		ad.ID, ad.Title, ad.Description, ad.Category, ad.Region, ad.Price,
+		string(ad.Status), ad.CreatedAt.UTC(), pub,
 	)
 	return err
 }
@@ -48,7 +53,7 @@ func (r *AdsRepository) GetByID(ctx context.Context, id string) (*entities.Ad, e
 		return nil, errors.New("empty id")
 	}
 	row := r.db.QueryRowContext(ctx, `
-		SELECT id, title, status, created_at, published_at
+		SELECT id, title, description, category, region, price, status, created_at, published_at
 		FROM ads WHERE id = $1`, id,
 	)
 	var (
@@ -57,7 +62,10 @@ func (r *AdsRepository) GetByID(ctx context.Context, id string) (*entities.Ad, e
 		createdAt   time.Time
 		publishedAt sql.NullTime
 	)
-	if err := row.Scan(&ad.ID, &ad.Title, &status, &createdAt, &publishedAt); err != nil {
+	if err := row.Scan(
+		&ad.ID, &ad.Title, &ad.Description, &ad.Category, &ad.Region, &ad.Price,
+		&status, &createdAt, &publishedAt,
+	); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return nil, nil
 		}

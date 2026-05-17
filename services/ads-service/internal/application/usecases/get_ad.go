@@ -9,14 +9,20 @@ import (
 )
 
 type GetAdUseCase struct {
-	ads ports.AdsRepository
+	ads     ports.AdsRepository
+	media   ports.MediaRepository
+	storage ports.ObjectStorage
 }
 
-func NewGetAdUseCase(ads ports.AdsRepository) (*GetAdUseCase, error) {
-	if ads == nil {
-		return nil, errors.New("nil ads repository")
+func NewGetAdUseCase(
+	ads ports.AdsRepository,
+	media ports.MediaRepository,
+	storage ports.ObjectStorage,
+) (*GetAdUseCase, error) {
+	if ads == nil || media == nil || storage == nil {
+		return nil, errors.New("nil dependency")
 	}
-	return &GetAdUseCase{ads: ads}, nil
+	return &GetAdUseCase{ads: ads, media: media, storage: storage}, nil
 }
 
 func (uc *GetAdUseCase) Execute(ctx context.Context, id string) (*entities.Ad, error) {
@@ -30,5 +36,13 @@ func (uc *GetAdUseCase) Execute(ctx context.Context, id string) (*entities.Ad, e
 	if ad == nil {
 		return nil, ErrAdNotFound
 	}
+	photos, err := uc.media.ListByAdID(ctx, id)
+	if err != nil {
+		return nil, err
+	}
+	for i := range photos {
+		photos[i].URL = uc.storage.PublicURL(photos[i].StorageKey)
+	}
+	ad.Photos = photos
 	return ad, nil
 }

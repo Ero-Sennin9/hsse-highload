@@ -2,6 +2,7 @@ package usecases
 
 import (
 	"context"
+	"strings"
 	"testing"
 
 	"ads-service/internal/domain/entities"
@@ -14,12 +15,22 @@ func TestCreateAdUseCase_Execute(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	ad, err := uc.Execute(context.Background(), CreateAdInput{Title: "  bike  "})
+	desc := strings.Repeat("x", 25)
+	ad, err := uc.Execute(context.Background(), CreateAdInput{
+		Title:       "  bike pro  ",
+		Description: desc,
+		Category:    "transport",
+		Region:      "moscow",
+		Price:       15000,
+	})
 	if err != nil {
 		t.Fatal(err)
 	}
-	if ad.Title != "bike" {
+	if ad.Title != "bike pro" {
 		t.Fatalf("title: got %q", ad.Title)
+	}
+	if ad.Description != desc {
+		t.Fatalf("description mismatch")
 	}
 	if ad.Status != entities.AdStatusModerationPending {
 		t.Fatalf("status: got %q", ad.Status)

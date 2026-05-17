@@ -9,6 +9,7 @@ package di
 import (
 	"ads-service/internal/application/usecases"
 	"ads-service/internal/infrastructure/adapters/postgres"
+	"ads-service/internal/infrastructure/adapters/s3"
 	"ads-service/internal/presentation/http"
 	"net/http"
 )
@@ -32,10 +33,22 @@ func InitializeHTTPHandler() (http.Handler, error) {
 	if err != nil {
 		return nil, err
 	}
-	getAdUseCase, err := usecases.NewGetAdUseCase(adsRepository)
+	mediaRepository, err := postgres.NewMediaRepository(db)
 	if err != nil {
 		return nil, err
 	}
-	handler := httpapi.NewRouter(createAdUseCase, publishAdUseCase, getAdUseCase, db)
+	objectStorage, err := s3.NewObjectStorage()
+	if err != nil {
+		return nil, err
+	}
+	getAdUseCase, err := usecases.NewGetAdUseCase(adsRepository, mediaRepository, objectStorage)
+	if err != nil {
+		return nil, err
+	}
+	uploadAdPhotoUseCase, err := usecases.NewUploadAdPhotoUseCase(adsRepository, mediaRepository, objectStorage)
+	if err != nil {
+		return nil, err
+	}
+	handler := httpapi.NewRouter(createAdUseCase, publishAdUseCase, getAdUseCase, uploadAdPhotoUseCase, db)
 	return handler, nil
 }

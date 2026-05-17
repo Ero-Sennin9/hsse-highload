@@ -12,6 +12,7 @@ import (
 	"ads-service/internal/application/usecases"
 	"ads-service/internal/domain/ports"
 	"ads-service/internal/infrastructure/adapters/postgres"
+	"ads-service/internal/infrastructure/adapters/s3"
 	httpapi "ads-service/internal/presentation/http"
 )
 
@@ -20,9 +21,14 @@ func InitializeHTTPHandler() (http.Handler, error) {
 		postgres.OpenDB,
 		postgres.NewAdsRepository,
 		wire.Bind(new(ports.AdsRepository), new(*postgres.AdsRepository)),
+		postgres.NewMediaRepository,
+		wire.Bind(new(ports.MediaRepository), new(*postgres.MediaRepository)),
+		s3.NewObjectStorage,
+		wire.Bind(new(ports.ObjectStorage), new(*s3.ObjectStorage)),
 		usecases.NewCreateAdUseCase,
 		usecases.NewPublishAdUseCase,
 		usecases.NewGetAdUseCase,
+		usecases.NewUploadAdPhotoUseCase,
 		httpapi.NewRouter,
 	)
 	return nil, nil

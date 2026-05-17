@@ -1,384 +1,81 @@
-==> docker compose up -d --build
-time="2026-05-11T18:52:40+03:00" level=warning msg="Found multiple config files with supported names: /Users/deniskolesnikov/hsse-highload/docker-compose.yml, /Users/deniskolesnikov/hsse-highload/docker-compose.yaml"
-time="2026-05-11T18:52:40+03:00" level=warning msg="Using /Users/deniskolesnikov/hsse-highload/docker-compose.yml"
- postgres Pulling 
- d17f077ada11 Already exists 
- 25c916ddf219 Already exists 
- a27343c4a8c5 Already exists 
- 7ed5ff620604 Already exists 
- 93bdf5e6f9b4 Already exists 
- 52e8be50b28f Pulling fs layer 
- 9ef16937db33 Pulling fs layer 
- 7de8ce788719 Pulling fs layer 
- 3645cc5a5b3e Pulling fs layer 
- 1f6893bae04f Pulling fs layer 
- 7114e4afd0e3 Pulling fs layer 
- 7114e4afd0e3 Download complete 
- 52e8be50b28f Downloading [=============>                                     ]  28.51MB/103.1MB
- 9ef16937db33 Download complete 
- 7de8ce788719 Download complete 
- 1f6893bae04f Download complete 
- 3645cc5a5b3e Download complete 
- 52e8be50b28f Downloading [==============>                                    ]  29.05MB/103.1MB
- 52e8be50b28f Downloading [==============>                                    ]  29.59MB/103.1MB
- 52e8be50b28f Downloading [==============>                                    ]  30.12MB/103.1MB
- 52e8be50b28f Downloading [==============>                                    ]  30.66MB/103.1MB
- 52e8be50b28f Downloading [===============>                                   ]   31.2MB/103.1MB
- 52e8be50b28f Downloading [===============>                                   ]  31.74MB/103.1MB
- 52e8be50b28f Downloading [===============>                                   ]  32.28MB/103.1MB
- 52e8be50b28f Downloading [===============>                                   ]  32.82MB/103.1MB
- 52e8be50b28f Downloading [================>                                  ]  33.36MB/103.1MB
- 52e8be50b28f Downloading [================>                                  ]  33.89MB/103.1MB
- 52e8be50b28f Downloading [================>                                  ]  34.43MB/103.1MB
- 52e8be50b28f Downloading [================>                                  ]  34.96MB/103.1MB
- 52e8be50b28f Downloading [=================>                                 ]   35.5MB/103.1MB
- 52e8be50b28f Downloading [=================>                                 ]  36.04MB/103.1MB
- 52e8be50b28f Downloading [=================>                                 ]  36.58MB/103.1MB
- 52e8be50b28f Downloading [==================>                                ]  37.11MB/103.1MB
- 52e8be50b28f Downloading [==================>                                ]  37.65MB/103.1MB
- 52e8be50b28f Downloading [==================>                                ]  38.19MB/103.1MB
- 52e8be50b28f Downloading [==================>                                ]  38.73MB/103.1MB
- 52e8be50b28f Downloading [===================>                               ]  39.26MB/103.1MB
- 52e8be50b28f Downloading [===================>                               ]   39.8MB/103.1MB
- 52e8be50b28f Downloading [===================>                               ]  40.33MB/103.1MB
- 52e8be50b28f Downloading [===================>                               ]  40.87MB/103.1MB
- 52e8be50b28f Downloading [====================>                              ]  41.41MB/103.1MB
- 52e8be50b28f Downloading [====================>                              ]  41.94MB/103.1MB
- 52e8be50b28f Downloading [====================>                              ]  42.48MB/103.1MB
- 52e8be50b28f Downloading [====================>                              ]  43.02MB/103.1MB
- 52e8be50b28f Downloading [=====================>                             ]  43.56MB/103.1MB
- 52e8be50b28f Downloading [=====================>                             ]   44.1MB/103.1MB
- 52e8be50b28f Downloading [=====================>                             ]  44.63MB/103.1MB
- 52e8be50b28f Downloading [=====================>                             ]  45.17MB/103.1MB
- 52e8be50b28f Downloading [======================>                            ]   45.7MB/103.1MB
- 52e8be50b28f Downloading [======================>                            ]  46.24MB/103.1MB
- 52e8be50b28f Downloading [======================>                            ]  46.79MB/103.1MB
- 52e8be50b28f Downloading [======================>                            ]  47.32MB/103.1MB
- 52e8be50b28f Downloading [=======================>                           ]  47.86MB/103.1MB
- 52e8be50b28f Downloading [=======================>                           ]   48.4MB/103.1MB
- 52e8be50b28f Downloading [=======================>                           ]  48.93MB/103.1MB
- 52e8be50b28f Downloading [=======================>                           ]  49.46MB/103.1MB
- 52e8be50b28f Downloading [========================>                          ]     50MB/103.1MB
- 52e8be50b28f Downloading [========================>                          ]  50.54MB/103.1MB
- 52e8be50b28f Downloading [========================>                          ]  51.07MB/103.1MB
- 52e8be50b28f Downloading [=========================>                         ]  51.61MB/103.1MB
- 52e8be50b28f Downloading [=========================>                         ]  52.15MB/103.1MB
- 52e8be50b28f Downloading [=========================>                         ]  52.69MB/103.1MB
- 52e8be50b28f Downloading [=========================>                         ]  53.22MB/103.1MB
- 52e8be50b28f Downloading [==========================>                        ]  53.75MB/103.1MB
- 52e8be50b28f Downloading [==========================>                        ]  54.28MB/103.1MB
- 52e8be50b28f Downloading [==========================>                        ]  54.81MB/103.1MB
- 52e8be50b28f Retrying in 5 seconds 
- 52e8be50b28f Retrying in 4 seconds 
- 52e8be50b28f Retrying in 3 seconds 
- 52e8be50b28f Retrying in 2 seconds 
- 52e8be50b28f Retrying in 1 second 
- 52e8be50b28f Downloading [>                                                  ]  489.5kB/47.98MB
- 52e8be50b28f Downloading [=>                                                 ]  974.7kB/47.98MB
- 52e8be50b28f Downloading [=>                                                 ]  1.462MB/47.98MB
- 52e8be50b28f Downloading [==>                                                ]  1.955MB/47.98MB
- 52e8be50b28f Downloading [==>                                                ]  2.447MB/47.98MB
- 52e8be50b28f Downloading [===>                                               ]  2.938MB/47.98MB
- 52e8be50b28f Downloading [===>                                               ]   3.43MB/47.98MB
- 52e8be50b28f Downloading [====>                                              ]  3.911MB/47.98MB
- 52e8be50b28f Downloading [====>                                              ]  4.403MB/47.98MB
- 52e8be50b28f Downloading [=====>                                             ]  4.894MB/47.98MB
- 52e8be50b28f Downloading [=====>                                             ]  5.386MB/47.98MB
- 52e8be50b28f Downloading [======>                                            ]  5.877MB/47.98MB
- 52e8be50b28f Downloading [======>                                            ]  6.364MB/47.98MB
- 52e8be50b28f Downloading [=======>                                           ]  6.845MB/47.98MB
- 52e8be50b28f Downloading [=======>                                           ]  7.337MB/47.98MB
- 52e8be50b28f Downloading [========>                                          ]  7.826MB/47.98MB
- 52e8be50b28f Downloading [========>                                          ]  8.317MB/47.98MB
- 52e8be50b28f Downloading [=========>                                         ]  8.797MB/47.98MB
- 52e8be50b28f Downloading [=========>                                         ]  9.289MB/47.98MB
- 52e8be50b28f Downloading [==========>                                        ]   9.78MB/47.98MB
- 52e8be50b28f Downloading [==========>                                        ]  10.26MB/47.98MB
- 52e8be50b28f Downloading [===========>                                       ]  10.76MB/47.98MB
- 52e8be50b28f Downloading [===========>                                       ]  11.25MB/47.98MB
- 52e8be50b28f Downloading [============>                                      ]  11.74MB/47.98MB
- 52e8be50b28f Downloading [============>                                      ]  12.22MB/47.98MB
- 52e8be50b28f Downloading [=============>                                     ]  12.71MB/47.98MB
- 52e8be50b28f Downloading [=============>                                     ]   13.2MB/47.98MB
- 52e8be50b28f Downloading [==============>                                    ]  13.69MB/47.98MB
- 52e8be50b28f Downloading [==============>                                    ]  14.18MB/47.98MB
- 52e8be50b28f Downloading [===============>                                   ]  14.68MB/47.98MB
- 52e8be50b28f Downloading [===============>                                   ]  15.17MB/47.98MB
- 52e8be50b28f Downloading [================>                                  ]  15.65MB/47.98MB
- 52e8be50b28f Downloading [================>                                  ]  16.14MB/47.98MB
- 52e8be50b28f Downloading [=================>                                 ]  16.63MB/47.98MB
- 52e8be50b28f Downloading [=================>                                 ]  17.11MB/47.98MB
- 52e8be50b28f Downloading [==================>                                ]   17.6MB/47.98MB
- 52e8be50b28f Downloading [==================>                                ]  18.09MB/47.98MB
- 52e8be50b28f Downloading [===================>                               ]  18.58MB/47.98MB
- 52e8be50b28f Downloading [===================>                               ]  19.07MB/47.98MB
- 52e8be50b28f Downloading [====================>                              ]  19.56MB/47.98MB
- 52e8be50b28f Downloading [====================>                              ]  20.05MB/47.98MB
- 52e8be50b28f Downloading [=====================>                             ]  20.54MB/47.98MB
- 52e8be50b28f Downloading [=====================>                             ]  21.03MB/47.98MB
- 52e8be50b28f Downloading [======================>                            ]  21.53MB/47.98MB
- 52e8be50b28f Downloading [======================>                            ]  22.02MB/47.98MB
- 52e8be50b28f Downloading [=======================>                           ]   22.5MB/47.98MB
- 52e8be50b28f Downloading [=======================>                           ]     23MB/47.98MB
- 52e8be50b28f Downloading [========================>                          ]  23.48MB/47.98MB
- 52e8be50b28f Downloading [========================>                          ]  23.97MB/47.98MB
- 52e8be50b28f Downloading [=========================>                         ]  24.46MB/47.98MB
- 52e8be50b28f Downloading [==========================>                        ]  24.96MB/47.98MB
- 52e8be50b28f Downloading [==========================>                        ]  25.45MB/47.98MB
- 52e8be50b28f Downloading [===========================>                       ]  25.93MB/47.98MB
- 52e8be50b28f Downloading [===========================>                       ]  26.43MB/47.98MB
- 52e8be50b28f Downloading [============================>                      ]  26.92MB/47.98MB
- 52e8be50b28f Downloading [============================>                      ]  27.41MB/47.98MB
- 52e8be50b28f Downloading [=============================>                     ]   27.9MB/47.98MB
- 52e8be50b28f Downloading [=============================>                     ]  28.39MB/47.98MB
- 52e8be50b28f Downloading [==============================>                    ]  28.87MB/47.98MB
- 52e8be50b28f Downloading [==============================>                    ]  29.36MB/47.98MB
- 52e8be50b28f Downloading [===============================>                   ]  29.84MB/47.98MB
- 52e8be50b28f Downloading [===============================>                   ]  30.33MB/47.98MB
- 52e8be50b28f Downloading [================================>                  ]  30.82MB/47.98MB
- 52e8be50b28f Downloading [================================>                  ]   31.3MB/47.98MB
- 52e8be50b28f Downloading [=================================>                 ]  31.79MB/47.98MB
- 52e8be50b28f Downloading [=================================>                 ]  32.28MB/47.98MB
- 52e8be50b28f Downloading [==================================>                ]  32.76MB/47.98MB
- 52e8be50b28f Downloading [==================================>                ]  33.25MB/47.98MB
- 52e8be50b28f Downloading [===================================>               ]  33.74MB/47.98MB
- 52e8be50b28f Downloading [===================================>               ]  34.23MB/47.98MB
- 52e8be50b28f Downloading [====================================>              ]  34.72MB/47.98MB
- 52e8be50b28f Downloading [====================================>              ]  35.21MB/47.98MB
- 52e8be50b28f Downloading [=====================================>             ]   35.7MB/47.98MB
- 52e8be50b28f Downloading [=====================================>             ]   36.2MB/47.98MB
- 52e8be50b28f Downloading [======================================>            ]  36.69MB/47.98MB
- 52e8be50b28f Downloading [======================================>            ]  37.18MB/47.98MB
- 52e8be50b28f Downloading [=======================================>           ]  37.66MB/47.98MB
- 52e8be50b28f Downloading [=======================================>           ]  38.15MB/47.98MB
- 52e8be50b28f Downloading [========================================>          ]  38.64MB/47.98MB
- 52e8be50b28f Downloading [========================================>          ]  39.12MB/47.98MB
- 52e8be50b28f Downloading [=========================================>         ]  39.61MB/47.98MB
- 52e8be50b28f Downloading [=========================================>         ]  40.09MB/47.98MB
- 52e8be50b28f Downloading [==========================================>        ]  40.58MB/47.98MB
- 52e8be50b28f Downloading [==========================================>        ]  41.08MB/47.98MB
- 52e8be50b28f Downloading [===========================================>       ]  41.57MB/47.98MB
- 52e8be50b28f Downloading [===========================================>       ]  42.06MB/47.98MB
- 52e8be50b28f Downloading [============================================>      ]  42.55MB/47.98MB
- 52e8be50b28f Downloading [============================================>      ]  43.03MB/47.98MB
- 52e8be50b28f Downloading [=============================================>     ]  43.53MB/47.98MB
- 52e8be50b28f Downloading [=============================================>     ]  44.02MB/47.98MB
- 52e8be50b28f Downloading [==============================================>    ]  44.51MB/47.98MB
- 52e8be50b28f Downloading [==============================================>    ]     45MB/47.98MB
- 52e8be50b28f Downloading [===============================================>   ]  45.49MB/47.98MB
- 52e8be50b28f Downloading [===============================================>   ]  45.99MB/47.98MB
- 52e8be50b28f Downloading [================================================>  ]  46.48MB/47.98MB
- 52e8be50b28f Downloading [================================================>  ]  46.96MB/47.98MB
- 52e8be50b28f Downloading [=================================================> ]  47.45MB/47.98MB
- 52e8be50b28f Downloading [=================================================> ]  47.94MB/47.98MB
- 52e8be50b28f Download complete 
- 52e8be50b28f Extracting [>                                                  ]  557.1kB/103.1MB
- 52e8be50b28f Extracting [====>                                              ]   9.47MB/103.1MB
- 52e8be50b28f Extracting [===========>                                       ]  22.84MB/103.1MB
- 52e8be50b28f Extracting [=================>                                 ]  36.21MB/103.1MB
- 52e8be50b28f Extracting [=======================>                           ]  49.02MB/103.1MB
- 52e8be50b28f Extracting [===========================>                       ]  56.26MB/103.1MB
- 52e8be50b28f Extracting [================================>                  ]  66.29MB/103.1MB
- 52e8be50b28f Extracting [===================================>               ]  73.53MB/103.1MB
- 52e8be50b28f Extracting [=====================================>             ]  76.32MB/103.1MB
- 52e8be50b28f Extracting [=======================================>           ]  82.44MB/103.1MB
- 52e8be50b28f Extracting [===========================================>       ]  89.69MB/103.1MB
- 52e8be50b28f Extracting [===============================================>   ]  98.04MB/103.1MB
- 52e8be50b28f Extracting [==================================================>]  103.1MB/103.1MB
- 52e8be50b28f Pull complete 
- 9ef16937db33 Extracting [==================================================>]  9.619kB/9.619kB
- 9ef16937db33 Extracting [==================================================>]  9.619kB/9.619kB
- 9ef16937db33 Pull complete 
- 7de8ce788719 Extracting [==================================================>]     128B/128B
- 7de8ce788719 Extracting [==================================================>]     128B/128B
- 7de8ce788719 Pull complete 
- 3645cc5a5b3e Extracting [==================================================>]     169B/169B
- 3645cc5a5b3e Extracting [==================================================>]     169B/169B
- 3645cc5a5b3e Pull complete 
- 1f6893bae04f Extracting [==================================================>]  6.097kB/6.097kB
- 1f6893bae04f Extracting [==================================================>]  6.097kB/6.097kB
- 1f6893bae04f Pull complete 
- 7114e4afd0e3 Extracting [==================================================>]     184B/184B
- 7114e4afd0e3 Extracting [==================================================>]     184B/184B
- 7114e4afd0e3 Pull complete 
- postgres Pulled 
-#1 [internal] load local bake definitions
-#1 reading from stdin 1.14kB done
-#1 DONE 0.0s
-
-#2 [billing-service internal] load build definition from Dockerfile
-#2 transferring dockerfile: 390B done
-#2 DONE 0.0s
-
-#3 [ads-service internal] load build definition from Dockerfile
-#3 transferring dockerfile: 374B done
-#3 DONE 0.0s
-
-#4 [ads-service internal] load metadata for docker.io/library/golang:1.22-alpine
-#4 DONE 2.3s
-
-#5 [billing-service internal] load metadata for docker.io/library/alpine:3.20
-#5 DONE 2.3s
-
-#6 [billing-service build 1/6] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
-#6 DONE 0.0s
-
-#7 [billing-service stage-1 1/4] FROM docker.io/library/alpine:3.20@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
-#7 CACHED
-
-#8 [ads-service internal] load .dockerignore
-#8 transferring context: 53B done
-#8 DONE 0.0s
-
-#9 [billing-service internal] load .dockerignore
-#9 transferring context: 53B done
-#9 DONE 0.0s
-
-#10 [billing-service build 2/6] WORKDIR /src
-#10 CACHED
-
-#11 [ads-service internal] load build context
-#11 transferring context: 24.23kB done
-#11 DONE 0.0s
-
-#12 [billing-service internal] load build context
-#12 transferring context: 24.20kB done
-#12 DONE 0.2s
-
-#13 [billing-service stage-1 2/4] RUN apk add --no-cache wget
-#13 ...
-
-#14 [billing-service build 3/6] COPY go.mod go.sum* ./
-#14 DONE 0.2s
-
-#15 [ads-service build 3/6] COPY go.mod go.sum* ./
-#15 DONE 0.2s
-
-#13 [billing-service stage-1 2/4] RUN apk add --no-cache wget
-#13 0.285 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/aarch64/APKINDEX.tar.gz
-#13 1.021 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/aarch64/APKINDEX.tar.gz
-#13 2.478 (1/4) Installing libunistring (1.2-r0)
-#13 3.239 (2/4) Installing libidn2 (2.3.7-r0)
-#13 3.456 (3/4) Installing pcre2 (10.43-r0)
-#13 3.708 (4/4) Installing wget (1.24.5-r0)
-#13 3.979 Executing busybox-1.36.1-r31.trigger
-#13 3.987 OK: 12 MiB in 18 packages
-#13 DONE 4.1s
-
-#16 [ads-service stage-1 3/4] WORKDIR /app
-#16 DONE 0.0s
-
-#17 [ads-service build 4/6] RUN go mod download
-#17 ...
-
-#18 [billing-service build 4/6] RUN go mod download
-#18 ...
-
-#17 [ads-service build 4/6] RUN go mod download
-#17 DONE 14.3s
-
-#19 [ads-service build 5/6] COPY . .
-#19 DONE 0.0s
-
-#20 [ads-service build 6/6] RUN CGO_ENABLED=0 go build -o /out/ads-service ./cmd
-#20 ...
-
-#18 [billing-service build 4/6] RUN go mod download
-#18 DONE 16.7s
-
-#21 [billing-service build 5/6] COPY . .
-#21 DONE 0.0s
-
-#22 [billing-service build 6/6] RUN CGO_ENABLED=0 go build -o /out/billing-service ./cmd
-#22 ...
-
-#20 [ads-service build 6/6] RUN CGO_ENABLED=0 go build -o /out/ads-service ./cmd
-#20 DONE 4.4s
-
-#23 [ads-service stage-1 4/4] COPY --from=build /out/ads-service ./ads-service
-#23 DONE 0.1s
-
-#22 [billing-service build 6/6] RUN CGO_ENABLED=0 go build -o /out/billing-service ./cmd
-#22 ...
-
-#24 [ads-service] exporting to image
-#24 exporting layers 0.1s done
-#24 writing image sha256:5c0d72d52af0424aaccd6dc8e2b7507e173185990dd396df998081a7d1a8118e done
-#24 naming to docker.io/library/hsse-highload-ads-service done
-#24 DONE 0.1s
-
-#25 [ads-service] resolving provenance for metadata file
-#25 DONE 0.0s
-
-#22 [billing-service build 6/6] RUN CGO_ENABLED=0 go build -o /out/billing-service ./cmd
-#22 DONE 4.6s
-
-#26 [billing-service stage-1 4/4] COPY --from=build /out/billing-service ./billing-service
-#26 DONE 0.1s
-
-#27 [billing-service] exporting to image
-#27 exporting layers 0.0s done
-#27 writing image sha256:846060c4aea08fa33be7f57f182a168d038c5ba0e2cc49b0ce87f115f1f494cf done
-#27 naming to docker.io/library/hsse-highload-billing-service done
-#27 DONE 0.0s
-
-#28 [billing-service] resolving provenance for metadata file
-#28 DONE 0.0s
- hsse-highload-ads-service  Built
- hsse-highload-billing-service  Built
- Network marketplace_app_net  Creating
- Network marketplace_app_net  Created
- Volume "hsse-highload_postgres_data"  Creating
- Volume "hsse-highload_postgres_data"  Created
- Container marketplace-postgres  Creating
- Container marketplace-postgres  Created
- Container ads-service  Creating
- Container ads-service  Created
- Container billing-service  Creating
- Container billing-service  Created
- Container marketplace-postgres  Starting
- Container marketplace-postgres  Started
- Container marketplace-postgres  Waiting
- Container marketplace-postgres  Healthy
- Container ads-service  Starting
- Container ads-service  Started
- Container marketplace-postgres  Waiting
- Container ads-service  Waiting
- Container marketplace-postgres  Healthy
- Container ads-service  Healthy
- Container billing-service  Starting
- Container billing-service  Started
-==> Ждём ads health: http://127.0.0.1:8081/health
-    OK (ads health)
-==> Ждём billing health: http://127.0.0.1:8082/health
-    OK (billing health)
+==> wait ads /health: http://127.0.0.1:8081/health
+    OK: ads /health
+==> wait billing /health: http://127.0.0.1:8082/health
+    OK: billing /health
 ==> POST http://127.0.0.1:8081/api/v1/ads
 {
-  "id": "0dcf731e-aa20-4993-942b-56f5047bc028",
-  "title": "verify-script",
-  "status": "moderation_pending"
+  "id": "a70dc513-bc27-44a4-8f1e-d52e7ff28aae",
+  "title": "Verify bike Pro",
+  "description": "load-test xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "category": "transport",
+  "region": "moscow",
+  "price": 19900,
+  "status": "moderation_pending",
+  "photos": []
 }
-    ad_id=0dcf731e-aa20-4993-942b-56f5047bc028
-==> POST publish
+    OK: create ad_id=a70dc513-bc27-44a4-8f1e-d52e7ff28aae
+==> POST promotion before publish (expect 409)
+    OK: promotion blocked before publish (HTTP 409)
+==> POST http://127.0.0.1:8081/api/v1/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/photos
 {
-  "id": "0dcf731e-aa20-4993-942b-56f5047bc028",
-  "title": "verify-script",
+  "id": "df00a71b-e457-4944-941c-2e63bda15247",
+  "url": "http://localhost:9000/marketplace-media/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/df00a71b-e457-4944-941c-2e63bda15247.png",
+  "contentType": "image/png",
+  "sizeBytes": 71,
+  "position": 0
+}
+    OK: photo uploaded
+==> GET photo from MinIO (http://localhost:9000/marketplace-media/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/df00a71b-e457-4944-941c-2e63bda15247.png)
+    OK: photo reachable via MinIO
+==> POST http://127.0.0.1:8081/api/v1/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/publish
+{
+  "id": "a70dc513-bc27-44a4-8f1e-d52e7ff28aae",
+  "title": "Verify bike Pro",
+  "description": "load-test xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "category": "transport",
+  "region": "moscow",
+  "price": 19900,
   "status": "published",
-  "publishedAt": "2026-05-11T16:12:35.362085001Z"
+  "photos": [
+    {
+      "id": "df00a71b-e457-4944-941c-2e63bda15247",
+      "url": "http://localhost:9000/marketplace-media/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/df00a71b-e457-4944-941c-2e63bda15247.png",
+      "contentType": "image/png",
+      "sizeBytes": 71,
+      "position": 0
+    }
+  ],
+  "publishedAt": "2026-05-17T13:55:32.016491Z"
 }
-==> GET ad
+    OK: published
+==> GET http://127.0.0.1:8081/api/v1/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae
 {
-  "id": "0dcf731e-aa20-4993-942b-56f5047bc028",
-  "title": "verify-script",
+  "id": "a70dc513-bc27-44a4-8f1e-d52e7ff28aae",
+  "title": "Verify bike Pro",
+  "description": "load-test xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "category": "transport",
+  "region": "moscow",
+  "price": 19900,
   "status": "published",
-  "publishedAt": "2026-05-11T16:12:35.362085Z"
+  "photos": [
+    {
+      "id": "df00a71b-e457-4944-941c-2e63bda15247",
+      "url": "http://localhost:9000/marketplace-media/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/df00a71b-e457-4944-941c-2e63bda15247.png",
+      "contentType": "image/png",
+      "sizeBytes": 71,
+      "position": 0
+    }
+  ],
+  "publishedAt": "2026-05-17T13:55:32.016491Z"
 }
-==> POST promotion (billing → ads HTTP + Postgres)
+    OK: GET card with 1 photo(s)
+==> POST http://127.0.0.1:8082/api/v1/ads/a70dc513-bc27-44a4-8f1e-d52e7ff28aae/promotions
 {
-  "id": "99539d55-70bb-4428-871a-a8c0306081a9",
-  "adId": "0dcf731e-aa20-4993-942b-56f5047bc028",
+  "id": "cd84c571-3d65-43aa-9bbe-5d1d8ceebef8",
+  "adId": "a70dc513-bc27-44a4-8f1e-d52e7ff28aae",
   "status": "active",
-  "createdAt": "2026-05-11T16:12:35Z"
+  "createdAt": "2026-05-17T13:55:32Z"
 }
+    OK: promotion status=active
 
-=== Всё ок: цепочка прошла (create → publish → get → promotion) ===
+=== PASS: health → create → photo → publish → get → promotion ===

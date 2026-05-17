@@ -27,20 +27,26 @@ docker compose ps
 | `ads-service`   | 8081 | `GET http://localhost:8081/health` |
 | `billing-service` | 8082 | `GET http://localhost:8082/health` |
 | `postgres`      | (только сеть Docker) | `pg_isready` внутри контейнера |
+| `minio`         | 9000 (API), 9001 (console) | bucket `marketplace-media` |
 
 Пересоздать БД с нуля (если менялась схема): `docker compose down -v && docker compose up -d --build`.
 
 ### 2. Как проверить (curl, happy path из ДЗ 2)
 
-Создать объявление (статус `moderation_pending` по OpenAPI):
+Создать объявление (статус `moderation_pending`):
 
 ```bash
 curl -sS -X POST http://localhost:8081/api/v1/ads \
   -H 'Content-Type: application/json' \
-  -d '{"title":"Велосипед"}' | jq .
+  -d '{"title":"Велосипед Pro","description":"Отличный велосипед для города и леса, почти новый.","category":"transport","region":"moscow","price":19900}' | jq .
 ```
 
-Ожидается **201** и JSON с полями `id`, `title`, `status` (`moderation_pending`).
+Загрузить фото (до 8 шт., jpeg/png/webp, макс. 5 МБ; файлы в MinIO, метаданные в Postgres):
+
+```bash
+curl -sS -X POST "http://localhost:8081/api/v1/ads/${AD_ID}/photos" \
+  -F "file=@./photo.jpg;type=image/jpeg" | jq .
+```
 
 Опубликовать (имитация успешной модерации → `published`):
 
@@ -125,6 +131,7 @@ k6 run loadtest/smoke.js
 ## Локальная разработка
 
 ```bash
-make test    # unit-тесты
-make wire    # пересборка Wire DI
+make test
+make wire
+./scripts/verify-poc.sh
 ```

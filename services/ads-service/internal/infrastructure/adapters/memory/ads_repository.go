@@ -27,6 +27,7 @@ func (r *AdsRepository) Save(_ context.Context, ad *entities.Ad) error {
 	r.mu.Lock()
 	defer r.mu.Unlock()
 	cp := *ad
+	cp.Photos = nil
 	r.rows[ad.ID] = &cp
 	return nil
 }
@@ -42,5 +43,6 @@ func (r *AdsRepository) GetByID(_ context.Context, id string) (*entities.Ad, err
 		return nil, nil
 	}
 	cp := *ad
+	cp.Photos = nil
 	return &cp, nil
 }
