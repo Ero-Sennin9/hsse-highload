@@ -1,0 +1,39 @@
+scenario: read
+duration_sec: 900
+started_utc: 20260517T122445Z
+host: team-08
+uname: Linux team-08 5.15.0-119-generic #129-Ubuntu SMP Fri Aug 2 19:25:20 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+--- docker compose ps ---
+NAME                   IMAGE                           COMMAND                  SERVICE           CREATED          STATUS                    PORTS
+ads-service            hsse-highload-ads-service       "/app/ads-service"       ads-service       15 minutes ago   Up 14 minutes (healthy)   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+billing-service        hsse-highload-billing-service   "/app/billing-service"   billing-service   15 minutes ago   Up 14 minutes (healthy)   0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+marketplace-postgres   postgres:16-alpine              "docker-entrypoint.s…"   postgres          15 minutes ago   Up 15 minutes (healthy)   5432/tcp
+
+--- docker compose config (deploy.resources) ---
+services:
+    container_name: ads-service
+          cpus: 0.5
+          memory: "536870912"
+    container_name: billing-service
+          cpus: 0.5
+          memory: "536870912"
+    container_name: marketplace-postgres
+          cpus: 0.75
+          memory: "1073741824"
+--- final docker stats ---
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+fb04b133e30c   billing-service        0.00%     3.461MiB / 512MiB   0.68%     476kB / 592kB     0B / 0B         5
+349c6cbc5d52   ads-service            1.92%     6.246MiB / 512MiB   1.22%     80.6MB / 72.7MB   0B / 0B         7
+fcb0ee6fbeae   marketplace-postgres   0.00%     49.41MiB / 1GiB     4.82%     30.3MB / 45.9MB   434kB / 227MB   11
+
+--- final docker compose ps ---
+NAME                   IMAGE                           COMMAND                  SERVICE           CREATED          STATUS                    PORTS
+ads-service            hsse-highload-ads-service       "/app/ads-service"       ads-service       30 minutes ago   Up 30 minutes (healthy)   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+billing-service        hsse-highload-billing-service   "/app/billing-service"   billing-service   30 minutes ago   Up 29 minutes (healthy)   0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+marketplace-postgres   postgres:16-alpine              "docker-entrypoint.s…"   postgres          30 minutes ago   Up 30 minutes (healthy)   5432/tcp
+
+--- container OOM/exit codes ---
+/ads-service OOMKilled=false ExitCode=0 Status=running
+/billing-service OOMKilled=false ExitCode=0 Status=running
+/marketplace-postgres OOMKilled=false ExitCode=0 Status=running

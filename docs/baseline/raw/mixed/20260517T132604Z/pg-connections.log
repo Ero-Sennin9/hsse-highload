@@ -1,0 +1,432 @@
+2026-05-17T13:26:04Z
+time="2026-05-17T13:26:04Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:04Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:04Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:04Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:26:14Z
+time="2026-05-17T13:26:14Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:14Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:14Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:14Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:26:24Z
+time="2026-05-17T13:26:24Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:24Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:24Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:24Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:26:35Z
+time="2026-05-17T13:26:35Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:35Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:35Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:35Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:26:45Z
+time="2026-05-17T13:26:45Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:45Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:45Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:45Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:26:55Z
+time="2026-05-17T13:26:55Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:55Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:26:55Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:26:55Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:05Z
+time="2026-05-17T13:27:05Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:05Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:05Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:05Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:15Z
+time="2026-05-17T13:27:15Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:15Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:15Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:15Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:25Z
+time="2026-05-17T13:27:25Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:25Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:25Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:25Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:35Z
+time="2026-05-17T13:27:35Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:35Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:35Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:35Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     9
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:45Z
+time="2026-05-17T13:27:45Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:45Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:45Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:45Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:27:55Z
+time="2026-05-17T13:27:55Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:55Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:27:55Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:27:55Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:05Z
+time="2026-05-17T13:28:05Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:05Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:05Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:05Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:16Z
+time="2026-05-17T13:28:16Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:16Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:16Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:16Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:26Z
+time="2026-05-17T13:28:26Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:26Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:26Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:26Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:36Z
+time="2026-05-17T13:28:36Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:36Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:36Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:36Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:46Z
+time="2026-05-17T13:28:46Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:46Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:46Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:46Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:28:56Z
+time="2026-05-17T13:28:56Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:56Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:28:56Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:28:56Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:06Z
+time="2026-05-17T13:29:06Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:06Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:06Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:06Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:16Z
+time="2026-05-17T13:29:16Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:16Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:16Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:16Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:26Z
+time="2026-05-17T13:29:26Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:26Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:26Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:26Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:36Z
+time="2026-05-17T13:29:36Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:36Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:36Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:36Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:46Z
+time="2026-05-17T13:29:46Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:46Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:46Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:46Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:29:56Z
+time="2026-05-17T13:29:57Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:57Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:29:57Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:29:57Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     5
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:07Z
+time="2026-05-17T13:30:07Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:07Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:07Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:07Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:17Z
+time="2026-05-17T13:30:17Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:17Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:17Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:17Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:27Z
+time="2026-05-17T13:30:27Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:27Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:27Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:27Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:37Z
+time="2026-05-17T13:30:37Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:37Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:37Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:37Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:47Z
+time="2026-05-17T13:30:47Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:47Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:47Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:47Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:30:57Z
+time="2026-05-17T13:30:57Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:57Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:30:57Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:30:57Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:07Z
+time="2026-05-17T13:31:07Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:07Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:07Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:07Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:17Z
+time="2026-05-17T13:31:17Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:17Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:17Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:17Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:27Z
+time="2026-05-17T13:31:27Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:27Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:27Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:27Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:38Z
+time="2026-05-17T13:31:38Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:38Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:38Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:38Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:48Z
+time="2026-05-17T13:31:48Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:48Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:48Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:48Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+
+2026-05-17T13:31:58Z
+time="2026-05-17T13:31:58Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:58Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+time="2026-05-17T13:31:58Z" level=warning msg="Found multiple config files with supported names: /home/student/hsse-highload/docker-compose.yml, /home/student/hsse-highload/docker-compose.yaml"
+time="2026-05-17T13:31:58Z" level=warning msg="Using /home/student/hsse-highload/docker-compose.yml"
+ state  | count 
+--------+-------
+ idle   |     6
+ active |     1
+(2 rows)
+
+

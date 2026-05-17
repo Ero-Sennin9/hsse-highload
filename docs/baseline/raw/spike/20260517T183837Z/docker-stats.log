@@ -1,0 +1,357 @@
+2026-05-17T18:38:37Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.13%     5.68MiB / 512MiB    1.11%     10.1MB / 10.4MB   0B / 0B           5
+ads-service            0.76%     7.66MiB / 512MiB    1.50%     522MB / 472MB     0B / 0B           7
+marketplace-postgres   2.76%     94.87MiB / 1GiB     9.26%     251MB / 392MB     6.29MB / 3.02GB   12
+marketplace-minio      0.02%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 8.95MB       9
+
+2026-05-17T18:38:44Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.64%     5.695MiB / 512MiB   1.11%     10.2MB / 10.5MB   0B / 0B           5
+ads-service            10.18%    10.08MiB / 512MiB   1.97%     525MB / 475MB     0B / 0B           7
+marketplace-postgres   11.43%    95.04MiB / 1GiB     9.28%     252MB / 394MB     6.29MB / 3.04GB   12
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 8.96MB       9
+
+2026-05-17T18:38:51Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        2.42%     5.711MiB / 512MiB   1.12%     10.3MB / 10.6MB   0B / 0B           5
+ads-service            7.39%     9.93MiB / 512MiB    1.94%     528MB / 478MB     0B / 0B           7
+marketplace-postgres   7.60%     95.23MiB / 1GiB     9.30%     254MB / 397MB     6.29MB / 3.06GB   12
+marketplace-minio      0.01%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 8.96MB       9
+
+2026-05-17T18:38:58Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.63%     6.281MiB / 512MiB   1.23%     10.4MB / 10.7MB   0B / 0B           5
+ads-service            7.95%     10.12MiB / 512MiB   1.98%     531MB / 480MB     0B / 0B           7
+marketplace-postgres   7.99%     95.38MiB / 1GiB     9.31%     255MB / 399MB     6.29MB / 3.08GB   12
+marketplace-minio      0.02%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.07MB       9
+
+2026-05-17T18:39:05Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.65%     6.836MiB / 512MiB   1.34%     10.5MB / 10.8MB   0B / 0B           5
+ads-service            10.45%    10.14MiB / 512MiB   1.98%     534MB / 483MB     0B / 0B           7
+marketplace-postgres   14.43%    95.43MiB / 1GiB     9.32%     257MB / 401MB     6.29MB / 3.09GB   12
+marketplace-minio      0.00%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.07MB       9
+
+2026-05-17T18:39:12Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.62%     7.168MiB / 512MiB   1.40%     10.6MB / 10.9MB   0B / 0B           5
+ads-service            7.09%     10.09MiB / 512MiB   1.97%     537MB / 485MB     0B / 0B           7
+marketplace-postgres   7.30%     95.59MiB / 1GiB     9.33%     258MB / 403MB     6.29MB / 3.11GB   12
+marketplace-minio      0.01%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.08MB       9
+
+2026-05-17T18:39:20Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.60%     7.18MiB / 512MiB    1.40%     10.7MB / 11MB     0B / 0B           5
+ads-service            8.57%     10.17MiB / 512MiB   1.99%     540MB / 488MB     0B / 0B           7
+marketplace-postgres   11.50%    95.72MiB / 1GiB     9.35%     259MB / 405MB     6.29MB / 3.13GB   12
+marketplace-minio      0.00%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.08MB       9
+
+2026-05-17T18:39:27Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.68%     7.176MiB / 512MiB   1.40%     10.8MB / 11.1MB   0B / 0B           5
+ads-service            8.04%     10.14MiB / 512MiB   1.98%     543MB / 491MB     0B / 0B           7
+marketplace-postgres   12.24%    95.89MiB / 1GiB     9.36%     261MB / 408MB     6.29MB / 3.14GB   12
+marketplace-minio      0.09%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.08MB       9
+
+2026-05-17T18:39:34Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.57%     7.18MiB / 512MiB    1.40%     10.9MB / 11.2MB   0B / 0B           5
+ads-service            7.04%     10.08MiB / 512MiB   1.97%     545MB / 493MB     0B / 0B           7
+marketplace-postgres   6.41%     95.97MiB / 1GiB     9.37%     262MB / 410MB     6.29MB / 3.16GB   12
+marketplace-minio      0.00%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.08MB       9
+
+2026-05-17T18:39:41Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        2.64%     7.188MiB / 512MiB   1.40%     11MB / 11.3MB     0B / 0B           5
+ads-service            8.29%     10.11MiB / 512MiB   1.97%     548MB / 496MB     0B / 0B           7
+marketplace-postgres   7.09%     96.13MiB / 1GiB     9.39%     263MB / 412MB     6.29MB / 3.17GB   12
+marketplace-minio      0.05%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.09MB       9
+
+2026-05-17T18:39:48Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.78%     7.188MiB / 512MiB   1.40%     11.1MB / 11.4MB   0B / 0B           5
+ads-service            10.09%    10.13MiB / 512MiB   1.98%     551MB / 499MB     0B / 0B           7
+marketplace-postgres   10.14%    96.43MiB / 1GiB     9.42%     265MB / 414MB     6.29MB / 3.19GB   12
+marketplace-minio      0.00%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.09MB       9
+
+2026-05-17T18:39:55Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+billing-service        0.85%     7.199MiB / 512MiB   1.41%     11.2MB / 11.5MB   0B / 0B          5
+ads-service            8.33%     10.14MiB / 512MiB   1.98%     554MB / 501MB     0B / 0B          7
+marketplace-postgres   9.13%     96.44MiB / 1GiB     9.42%     266MB / 416MB     6.29MB / 3.2GB   12
+marketplace-minio      0.01%     72.5MiB / 512MiB    14.16%    29.7kB / 21.3kB   0B / 9.09MB      9
+
+2026-05-17T18:40:02Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.82%     7.195MiB / 512MiB   1.41%     11.3MB / 11.6MB   0B / 0B           5
+ads-service            9.06%     10.18MiB / 512MiB   1.99%     557MB / 504MB     0B / 0B           7
+marketplace-postgres   15.16%    96.55MiB / 1GiB     9.43%     268MB / 418MB     6.29MB / 3.21GB   12
+marketplace-minio      0.01%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.2MB        9
+
+2026-05-17T18:40:09Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.82%     7.195MiB / 512MiB   1.41%     11.4MB / 11.7MB   0B / 0B           5
+ads-service            8.64%     10.02MiB / 512MiB   1.96%     560MB / 506MB     0B / 0B           7
+marketplace-postgres   10.56%    96.71MiB / 1GiB     9.44%     269MB / 421MB     6.29MB / 3.24GB   12
+marketplace-minio      0.00%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.2MB        9
+
+2026-05-17T18:40:16Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.88%     7.195MiB / 512MiB   1.41%     11.5MB / 11.8MB   0B / 0B           5
+ads-service            11.30%    10.14MiB / 512MiB   1.98%     563MB / 509MB     0B / 0B           7
+marketplace-postgres   12.94%    96.85MiB / 1GiB     9.46%     271MB / 423MB     6.29MB / 3.25GB   12
+marketplace-minio      0.02%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.21MB       9
+
+2026-05-17T18:40:23Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.75%     7.195MiB / 512MiB   1.41%     11.5MB / 11.9MB   0B / 0B           5
+ads-service            8.99%     10.15MiB / 512MiB   1.98%     566MB / 512MB     0B / 0B           7
+marketplace-postgres   9.93%     97.01MiB / 1GiB     9.47%     272MB / 425MB     6.29MB / 3.27GB   12
+marketplace-minio      0.00%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.21MB       9
+
+2026-05-17T18:40:30Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.91%     7.199MiB / 512MiB   1.41%     11.6MB / 12MB     0B / 0B           5
+ads-service            8.63%     10.16MiB / 512MiB   1.99%     569MB / 514MB     0B / 0B           7
+marketplace-postgres   9.42%     97.21MiB / 1GiB     9.49%     273MB / 427MB     6.29MB / 3.29GB   12
+marketplace-minio      0.02%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.22MB       9
+
+2026-05-17T18:40:37Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+billing-service        0.63%     7.195MiB / 512MiB   1.41%     11.7MB / 12.1MB   0B / 0B          5
+ads-service            9.36%     10.14MiB / 512MiB   1.98%     572MB / 517MB     0B / 0B          7
+marketplace-postgres   9.14%     97.3MiB / 1GiB      9.50%     275MB / 429MB     6.29MB / 3.3GB   12
+marketplace-minio      0.02%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.22MB      9
+
+2026-05-17T18:40:44Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.72%     7.199MiB / 512MiB   1.41%     11.8MB / 12.2MB   0B / 0B           5
+ads-service            11.57%    10.34MiB / 512MiB   2.02%     575MB / 520MB     0B / 0B           7
+marketplace-postgres   21.66%    97.59MiB / 1GiB     9.53%     276MB / 432MB     6.29MB / 3.32GB   12
+marketplace-minio      0.00%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.22MB       9
+
+2026-05-17T18:40:51Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.69%     7.199MiB / 512MiB   1.41%     11.9MB / 12.3MB   0B / 0B           5
+ads-service            11.25%    10.26MiB / 512MiB   2.00%     578MB / 523MB     0B / 0B           7
+marketplace-postgres   13.89%    97.66MiB / 1GiB     9.54%     278MB / 434MB     6.29MB / 3.33GB   12
+marketplace-minio      0.01%     72.45MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.22MB       9
+
+2026-05-17T18:40:58Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.80%     7.199MiB / 512MiB   1.41%     12.1MB / 12.5MB   0B / 0B           5
+ads-service            12.14%    10.29MiB / 512MiB   2.01%     582MB / 526MB     0B / 0B           7
+marketplace-postgres   20.84%    97.82MiB / 1GiB     9.55%     280MB / 437MB     6.29MB / 3.35GB   12
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.33MB       9
+
+2026-05-17T18:41:05Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.75%     7.207MiB / 512MiB   1.41%     12.2MB / 12.6MB   0B / 0B           5
+ads-service            14.08%    10.62MiB / 512MiB   2.08%     586MB / 530MB     0B / 0B           7
+marketplace-postgres   27.89%    98.93MiB / 1GiB     9.66%     282MB / 440MB     6.29MB / 3.38GB   16
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.33MB       9
+
+2026-05-17T18:41:12Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+billing-service        0.83%     7.207MiB / 512MiB   1.41%     12.3MB / 12.7MB   0B / 0B          5
+ads-service            12.71%    10.15MiB / 512MiB   1.98%     590MB / 533MB     0B / 0B          7
+marketplace-postgres   19.22%    98.22MiB / 1GiB     9.59%     284MB / 443MB     6.29MB / 3.4GB   12
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.34MB      9
+
+2026-05-17T18:41:19Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        1.00%     7.207MiB / 512MiB   1.41%     12.5MB / 12.9MB   0B / 0B           5
+ads-service            14.88%    10.44MiB / 512MiB   2.04%     596MB / 538MB     0B / 0B           7
+marketplace-postgres   17.03%    98.42MiB / 1GiB     9.61%     286MB / 447MB     6.29MB / 3.42GB   12
+marketplace-minio      0.02%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.34MB       9
+
+2026-05-17T18:41:26Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        1.03%     7.207MiB / 512MiB   1.41%     12.7MB / 13.1MB   0B / 0B           5
+ads-service            17.95%    10.49MiB / 512MiB   2.05%     601MB / 543MB     0B / 0B           7
+marketplace-postgres   32.71%    100.1MiB / 1GiB     9.78%     289MB / 451MB     6.29MB / 3.44GB   13
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.35MB       9
+
+2026-05-17T18:41:33Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.92%     7.207MiB / 512MiB   1.41%     12.8MB / 13.2MB   0B / 0B           5
+ads-service            18.36%    10.63MiB / 512MiB   2.08%     607MB / 548MB     0B / 0B           7
+marketplace-postgres   38.55%    102.9MiB / 1GiB     10.05%    292MB / 456MB     6.29MB / 3.47GB   16
+marketplace-minio      0.00%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.35MB       9
+
+2026-05-17T18:41:41Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+billing-service        1.11%     7.207MiB / 512MiB   1.41%     13MB / 13.4MB     0B / 0B          5
+ads-service            20.81%    10.64MiB / 512MiB   2.08%     613MB / 554MB     0B / 0B          7
+marketplace-postgres   41.93%    99.29MiB / 1GiB     9.70%     295MB / 461MB     6.29MB / 3.5GB   12
+marketplace-minio      0.01%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.35MB      9
+
+2026-05-17T18:41:48Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.97%     7.207MiB / 512MiB   1.41%     13.2MB / 13.5MB   0B / 0B           5
+ads-service            18.57%    10.65MiB / 512MiB   2.08%     619MB / 559MB     0B / 0B           7
+marketplace-postgres   38.76%    99.62MiB / 1GiB     9.73%     298MB / 466MB     6.29MB / 3.53GB   12
+marketplace-minio      0.01%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.36MB       9
+
+2026-05-17T18:41:55Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        1.00%     7.207MiB / 512MiB   1.41%     13.4MB / 13.7MB   0B / 0B           5
+ads-service            16.90%    10.45MiB / 512MiB   2.04%     624MB / 564MB     0B / 0B           7
+marketplace-postgres   29.78%    99.89MiB / 1GiB     9.75%     301MB / 470MB     6.29MB / 3.55GB   12
+marketplace-minio      0.02%     72.47MiB / 512MiB   14.15%    29.7kB / 21.3kB   0B / 9.36MB       9
+
+2026-05-17T18:42:02Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        2.76%     7.211MiB / 512MiB   1.41%     13.5MB / 13.9MB   0B / 0B           5
+ads-service            15.13%    10.7MiB / 512MiB    2.09%     629MB / 569MB     0B / 0B           7
+marketplace-postgres   30.92%    100.1MiB / 1GiB     9.78%     304MB / 474MB     6.29MB / 3.58GB   12
+marketplace-minio      0.01%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.46MB       9
+
+2026-05-17T18:42:09Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        1.00%     7.207MiB / 512MiB   1.41%     13.7MB / 14.1MB   0B / 0B           5
+ads-service            18.10%    10.69MiB / 512MiB   2.09%     635MB / 573MB     0B / 0B           7
+marketplace-postgres   31.49%    100.4MiB / 1GiB     9.80%     307MB / 478MB     6.29MB / 3.61GB   12
+marketplace-minio      0.01%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.46MB       9
+
+2026-05-17T18:42:16Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.97%     7.207MiB / 512MiB   1.41%     13.9MB / 14.2MB   0B / 0B           5
+ads-service            16.00%    10.7MiB / 512MiB    2.09%     640MB / 579MB     0B / 0B           7
+marketplace-postgres   21.79%    101.1MiB / 1GiB     9.87%     309MB / 482MB     6.29MB / 3.63GB   13
+marketplace-minio      0.01%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.47MB       9
+
+2026-05-17T18:42:23Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.85%     7.207MiB / 512MiB   1.41%     14MB / 14.4MB     0B / 0B           5
+ads-service            14.76%    10.63MiB / 512MiB   2.08%     645MB / 583MB     0B / 0B           7
+marketplace-postgres   24.88%    100.9MiB / 1GiB     9.86%     311MB / 485MB     6.29MB / 3.65GB   12
+marketplace-minio      0.90%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.47MB       9
+
+2026-05-17T18:42:30Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.87%     7.203MiB / 512MiB   1.41%     14.2MB / 14.5MB   0B / 0B           5
+ads-service            13.88%    10.57MiB / 512MiB   2.06%     650MB / 587MB     0B / 0B           7
+marketplace-postgres   23.67%    102.3MiB / 1GiB     9.99%     314MB / 489MB     6.29MB / 3.67GB   13
+marketplace-minio      0.00%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.48MB       9
+
+2026-05-17T18:42:37Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+billing-service        0.99%     7.203MiB / 512MiB   1.41%     14.3MB / 14.7MB   0B / 0B          5
+ads-service            11.59%    10.65MiB / 512MiB   2.08%     655MB / 591MB     0B / 0B          7
+marketplace-postgres   17.09%    101.6MiB / 1GiB     9.92%     316MB / 493MB     6.29MB / 3.7GB   12
+marketplace-minio      0.02%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.48MB      9
+
+2026-05-17T18:42:44Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.80%     7.199MiB / 512MiB   1.41%     14.5MB / 14.8MB   0B / 0B           5
+ads-service            13.69%    10.61MiB / 512MiB   2.07%     659MB / 595MB     0B / 0B           7
+marketplace-postgres   34.59%    101.8MiB / 1GiB     9.94%     318MB / 496MB     6.29MB / 3.72GB   12
+marketplace-minio      0.01%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.49MB       9
+
+2026-05-17T18:42:51Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.79%     7.203MiB / 512MiB   1.41%     14.6MB / 14.9MB   0B / 0B           5
+ads-service            10.12%    10.42MiB / 512MiB   2.03%     663MB / 599MB     0B / 0B           7
+marketplace-postgres   11.02%    101.9MiB / 1GiB     9.95%     320MB / 499MB     6.29MB / 3.74GB   12
+marketplace-minio      0.00%     72.49MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.49MB       9
+
+2026-05-17T18:42:58Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.80%     7.199MiB / 512MiB   1.41%     14.7MB / 15.1MB   0B / 0B           5
+ads-service            10.80%    10.41MiB / 512MiB   2.03%     667MB / 603MB     0B / 0B           7
+marketplace-postgres   17.23%    102.1MiB / 1GiB     9.97%     322MB / 502MB     6.29MB / 3.75GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.59MB       9
+
+2026-05-17T18:43:05Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.76%     7.199MiB / 512MiB   1.41%     14.8MB / 15.2MB   0B / 0B           5
+ads-service            10.41%    10.34MiB / 512MiB   2.02%     671MB / 606MB     0B / 0B           7
+marketplace-postgres   18.00%    106MiB / 1GiB       10.36%    324MB / 505MB     6.29MB / 3.77GB   15
+marketplace-minio      0.03%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.59MB       9
+
+2026-05-17T18:43:12Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.78%     7.199MiB / 512MiB   1.41%     14.9MB / 15.3MB   0B / 0B           5
+ads-service            10.48%    10.3MiB / 512MiB    2.01%     674MB / 609MB     0B / 0B           7
+marketplace-postgres   16.94%    102.7MiB / 1GiB     10.02%    326MB / 508MB     6.29MB / 3.79GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.6MB        9
+
+2026-05-17T18:43:19Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.70%     7.199MiB / 512MiB   1.41%     15.1MB / 15.5MB   0B / 0B           5
+ads-service            9.58%     10.21MiB / 512MiB   1.99%     678MB / 612MB     0B / 0B           7
+marketplace-postgres   14.52%    102.7MiB / 1GiB     10.03%    327MB / 510MB     6.29MB / 3.81GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.6MB        9
+
+2026-05-17T18:43:26Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.66%     7.195MiB / 512MiB   1.41%     15.2MB / 15.6MB   0B / 0B           5
+ads-service            10.70%    10.07MiB / 512MiB   1.97%     681MB / 615MB     0B / 0B           7
+marketplace-postgres   11.75%    103MiB / 1GiB       10.06%    329MB / 513MB     6.29MB / 3.83GB   12
+marketplace-minio      0.02%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.61MB       9
+
+2026-05-17T18:43:33Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.64%     7.199MiB / 512MiB   1.41%     15.3MB / 15.7MB   0B / 0B           5
+ads-service            9.40%     10.22MiB / 512MiB   2.00%     684MB / 618MB     0B / 0B           7
+marketplace-postgres   13.01%    103.1MiB / 1GiB     10.07%    330MB / 515MB     6.29MB / 3.84GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.61MB       9
+
+2026-05-17T18:43:40Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.64%     7.195MiB / 512MiB   1.41%     15.4MB / 15.8MB   0B / 0B           5
+ads-service            7.39%     10.16MiB / 512MiB   1.99%     687MB / 620MB     0B / 0B           7
+marketplace-postgres   7.40%     103.4MiB / 1GiB     10.09%    332MB / 517MB     6.29MB / 3.86GB   12
+marketplace-minio      0.02%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.61MB       9
+
+2026-05-17T18:43:47Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.45%     7.191MiB / 512MiB   1.40%     15.4MB / 15.9MB   0B / 0B           5
+ads-service            5.71%     10.1MiB / 512MiB    1.97%     689MB / 622MB     0B / 0B           7
+marketplace-postgres   6.95%     103.4MiB / 1GiB     10.10%    333MB / 519MB     6.29MB / 3.87GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.62MB       9
+
+2026-05-17T18:43:54Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.36%     7.191MiB / 512MiB   1.40%     15.5MB / 15.9MB   0B / 0B           5
+ads-service            3.98%     10.03MiB / 512MiB   1.96%     690MB / 624MB     0B / 0B           7
+marketplace-postgres   2.96%     103.5MiB / 1GiB     10.11%    333MB / 520MB     6.29MB / 3.87GB   12
+marketplace-minio      0.00%     72.51MiB / 512MiB   14.16%    29.7kB / 21.3kB   0B / 9.62MB       9
+
+2026-05-17T18:44:02Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.20%     7.188MiB / 512MiB   1.40%     15.5MB / 15.9MB   0B / 0B           5
+ads-service            2.02%     9.957MiB / 512MiB   1.94%     691MB / 625MB     0B / 0B           7
+marketplace-postgres   1.62%     103.5MiB / 1GiB     10.11%    334MB / 521MB     6.29MB / 3.88GB   12
+marketplace-minio      0.01%     72.53MiB / 512MiB   14.17%    29.7kB / 21.3kB   0B / 9.72MB       9
+
+2026-05-17T18:44:09Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.06%     7.156MiB / 512MiB   1.40%     15.5MB / 16MB     0B / 0B           5
+ads-service            0.44%     9.684MiB / 512MiB   1.89%     692MB / 625MB     0B / 0B           7
+marketplace-postgres   2.44%     103.5MiB / 1GiB     10.11%    334MB / 521MB     6.29MB / 3.88GB   12
+marketplace-minio      0.02%     72.53MiB / 512MiB   14.17%    29.7kB / 21.3kB   0B / 9.72MB       9
+
+2026-05-17T18:44:16Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.00%     7.152MiB / 512MiB   1.40%     15.5MB / 16MB     0B / 0B           5
+ads-service            0.00%     9.672MiB / 512MiB   1.89%     692MB / 625MB     0B / 0B           7
+marketplace-postgres   0.03%     103.5MiB / 1GiB     10.11%    334MB / 521MB     6.29MB / 3.88GB   12
+marketplace-minio      0.00%     72.53MiB / 512MiB   14.17%    29.7kB / 21.3kB   0B / 9.73MB       9
+
+2026-05-17T18:44:23Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        1.97%     7.152MiB / 512MiB   1.40%     15.5MB / 16MB     0B / 0B           5
+ads-service            0.00%     9.664MiB / 512MiB   1.89%     692MB / 625MB     0B / 0B           7
+marketplace-postgres   2.39%     103.5MiB / 1GiB     10.11%    334MB / 521MB     6.29MB / 3.88GB   12
+marketplace-minio      0.02%     72.53MiB / 512MiB   14.17%    29.7kB / 21.3kB   0B / 9.73MB       9
+
+2026-05-17T18:44:30Z
+NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O         PIDS
+billing-service        0.00%     7.152MiB / 512MiB   1.40%     15.5MB / 16MB     0B / 0B           5
+ads-service            0.00%     9.66MiB / 512MiB    1.89%     692MB / 625MB     0B / 0B           7
+marketplace-postgres   2.73%     103.5MiB / 1GiB     10.11%    334MB / 521MB     6.29MB / 3.88GB   12
+marketplace-minio      0.00%     72.54MiB / 512MiB   14.17%    29.7kB / 21.3kB   0B / 9.74MB       9
+
