@@ -1,0 +1,30 @@
+scenario: read
+duration_sec: 900
+started_utc: 20260517T175250Z
+host: team-08
+uname: Linux team-08 5.15.0-119-generic #129-Ubuntu SMP Fri Aug 2 19:25:20 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+--- docker compose ps ---
+NAME                   IMAGE                           COMMAND                  SERVICE           CREATED          STATUS                    PORTS
+ads-service            hsse-highload-ads-service       "/app/ads-service"       ads-service       22 minutes ago   Up 22 minutes (healthy)   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+billing-service        hsse-highload-billing-service   "/app/billing-service"   billing-service   22 minutes ago   Up 22 minutes (healthy)   0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+marketplace-minio      minio/minio:latest              "/usr/bin/docker-ent…"   minio             22 minutes ago   Up 22 minutes             0.0.0.0:9000-9001->9000-9001/tcp, [::]:9000-9001->9000-9001/tcp
+marketplace-postgres   postgres:16-alpine              "docker-entrypoint.s…"   postgres          22 minutes ago   Up 22 minutes (healthy)   5432/tcp
+
+--- docker compose config (deploy.resources) ---
+services:
+    container_name: ads-service
+          cpus: 0.5
+          memory: "536870912"
+    container_name: billing-service
+          cpus: 0.5
+          memory: "536870912"
+    container_name: marketplace-minio
+          cpus: 0.35
+          memory: "536870912"
+    container_name: marketplace-minio-init
+          cpus: 0.1
+          memory: "134217728"
+    container_name: marketplace-postgres
+          cpus: 0.75
+          memory: "1073741824"
