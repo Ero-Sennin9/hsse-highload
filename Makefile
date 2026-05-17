@@ -19,3 +19,11 @@ test:
 wire:
 	cd services/ads-service && go generate ./internal/di
 	cd services/billing-service && go generate ./internal/di
+
+.PHONY: seed
+seed:
+	docker compose exec -T postgres psql -U app -d marketplace -v ON_ERROR_STOP=1 < deployments/postgres/seed.sql
+
+.PHONY: seed-count
+seed-count:
+	docker compose exec -T postgres psql -U app -d marketplace -c "SELECT count(*) FROM ads WHERE status = 'published';"
