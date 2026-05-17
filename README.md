@@ -108,7 +108,23 @@ k6 run loadtest/smoke.js
 
 ### 5. Итерации оптимизации
 
-Шаблон таблицы и место для RED/USE и bottleneck — в [`docs/optimization-log.md`](docs/optimization-log.md). Git-теги `iter-0`, `iter-1`, … — по инструкции ДЗ 3 после замеров.
+Профиль трафика: **read-heavy** (~80% GET / ~15% write / ~5% promotion). VM: 2 vCPU, 8 GB RAM, 72 GB HDD.
+
+| Метрика              | NFR (ДЗ1)    | Iter 0        | Iter 1                    | Iter 2          |
+|----------------------|--------------|---------------|---------------------------|-----------------|
+| Latency p99 read     | < 500 мс     | **46 мс**     | ~46 мс                    | **~120 мс**     |
+| Latency p99 write    | < 1000 мс    | **46 мс**     | timeout (ошибки)          | **~180 мс**     |
+| Max RPS (read)       | ≥ 100        | > 400         | 1200                      | **1200** ✓      |
+| Max RPS (write)      | ≥ 10         | > 120         | ~225 (с ошибками)         | **225** ✓       |
+| Error rate           | < 1%         | **0.00%**     | **2.83%** ✗               | **0.00%** ✓     |
+| CPU / RAM            | 70–90% CPU   | < 20% / ~11%  | CPU ads-svc ~100% (лимит) | ~50% / ~12%     |
+| Bottleneck           | —            | не найден     | CPU ads-svc + conn pool   | **устранён**    |
+| Что сделали          | —            | —             | ↑ нагрузку до 1500 RPS    | CPU ×2, pool ×2.5, rate-limit ×4 |
+| NFR достигнут?       | —            | Да, все       | **Нет (write path)**      | **Да, все** ✓   |
+
+Git-теги: `iter-0` (baseline) → `iter-1` (bottleneck) → `iter-2` (оптимизация).
+
+Подробный анализ RED/USE метрик, bottleneck и diff по каждой итерации: [`docs/optimization-log.md`](docs/optimization-log.md).
 
 ---
 
